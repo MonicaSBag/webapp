@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; 
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("/static/image.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+}
+
+.form-box{
+    position: relative;
+    width: auto;
+    height: 350px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+H2{
+    font-size: 2em;
+    color: #FAF7F2;
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+H3{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: medium;
+    font-weight: 300;
+    color: #FAF7F2;
+    text-align: left;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 30px;
+    width: 310px;
+    border-bottom: 2px solid #FAF7F2;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #FAF7F2;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1em;
+    padding: 0 15px 0 5px;
+    color: #FAF7F2;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #FAF7F2;
+    font-size: 1.2rem;
+    top: 20px;
+}
+.login{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: .9rem;
+    display: flex;
+    color: #FAF7F2;
+    justify-content: left;
+}
+.login label input{
+    margin-right: 5px;
+}
+.login a{
+    color: #FAF7F2;
+    text-decoration: none;
+}
+.login a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid #FAF7F2;
+    color: #FAF7F2;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+button:hover{
+    background: #FAF7F2;
+    color: #2B2B2B;
+}
+form{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* una sola columna en pantallas chicas */
+  }
+  h2, h3{
+    text-align: center;
+    margin-left: 5px;
+  }
+  .login{
+    justify-content: center;
+    margin-top: 5px;
+  }
+  button{
+    margin-bottom: 5px;
+  }
+}

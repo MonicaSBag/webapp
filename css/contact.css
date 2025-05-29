@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; 
+}
+.MH-Home{
+    width: 100%;
+    height: 70vh;
+    background: url("/static/image.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FAF7F2;
+}
+#h1-MH{
+    font-family: "Poppins", sans-serif; 
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 4rem); /* mínimo 2rem, ideal 5vw, máximo 4rem */
+    margin-left: 30px;
+    color: #FAF7F2;
+    padding-top: 20rem;
+    text-align: left;
+    margin-bottom: 0px;
+}
+#h2-MH{
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400;
+    font-size: x-large;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #FAF7F2;
+    text-align: left;
+    margin-top: 0px;
+}
+.content{
+    background-color: #FAF7F2;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.grid-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
+    gap: 70px;
+}
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #2B2B2B;
+    margin-bottom: 10px
+}
+h2{
+    font-weight: 400;
+    font-size: large;
+    color: #2B2B2B;
+    text-align: justify;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0px;
+    width: 95%;
+    border-bottom: 2px solid #2B2B2B;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #2B2B2B;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1em;
+    padding: 0 15px 0 5px;
+    color: #2B2B2B;
+}
+button{
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid #2B2B2B;
+    color: #2B2B2B;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+button:hover{
+    background: #2B2B2B;
+    color: #FAF7F2;
+}
+textarea{
+    margin-top: 10px;
+    width: 95%;
+    font-size: 1em;
+    border-radius: 10px;
+    border: 2px solid #2B2B2B;
+    background-color: #FFF8ED;
+}
+.form-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+#form-title{
+    font-size: larger;
+}
+@media (max-width: 768px) {
+  .grid-content {
+    grid-template-columns: 1fr; /* una sola columna en pantallas chicas */
+    padding: 25px;
+    gap: 10px;
+  }
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: justify;
+  }
+.form-button {
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+#h1-MH{
+    padding-top: 16rem;
+}
+}

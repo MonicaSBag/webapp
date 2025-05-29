@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estantify | Estante de libros digital</title>
+    <link rel="shortcut icon" href="/static/icons8-explicit-50.png">
+    <!--CSS styesheet-->
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--Google Fonts--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+<body>
+    <!--HEADER SECTION (FALTA CONVERTIR A RESPONSIVE)-->
+    <header class="topnav">
+        <div class="logo" style="margin-right: 10px;"><img src="static/icons8-explicit-50.png" height="50px"></div>
+      
+        <!-- Checkbox para el menú móvil -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      
+        <nav class="nav">
+          <a href="/index.html">Home</a>
+          <a href="*">Novedades</a>
+          <a href="/contact.html">Contacto</a>
+          <a href="/about-us.html">Sobre nosotros</a>
+        </nav>
+      
+        <div class="user_log">
+          <a href="/login.html"><button class="login-button">Login</button></a>
+          <a href="/register.html"><button class="cta-button">Registrate</button></a>
+        </div>
+    </header>
+    <section>
+        <div class="MH-Home">
+            <h1>Estantify</h1>
+            <h2>Tu lugar para descubrir,<br>guardar y compartir lo que más te inspira.</h2>
+            
+        </div>
+        <!-- Sección de beneficios -->
+    <section class="features" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+  <div class="features-layout">
+    <div class="features-image">
+      <img src="static/open-doodles-reading-side.gif" alt="Doodle leyendo" />
+    </div>
+
+    <div class="features-content">
+      <h2>¿Por qué usar Estantify?</h2>
+      <p id="h2-p">Porque todo lo que te inspira merece un lugar propio. Guardalo, organizalo, compartilo.
+        <br>Esto es más que una app: es tu espacio.</p>
+
+      <div class="feature-cards">
+        <div class="card"><strong>Guarda tus favoritos</strong>
+          <p>Agregá lo que leés, marcá lo que ya tachaste, dejá tu review y sumá puntos a tus metas lectoras. Porque no es solo guardar, es construir tu propio estante con personalidad.<br><em>Tu estante, tu historia.</em></p>
+        </div>
+        <div class="card"><strong>Descubrí joyitas nuevas</strong>
+          <p>Explorá estantes públicos, seguí a otrxs usuarixs y descubrí contenido que no sabías que te iba a encantar.
+            <br><em>Siempre hay algo que te puede sorprender.</em></p>
+        </div>
+        <div class="card"><strong>Armá estantes con tu estilo</strong>
+          <p>Poné orden al caos digital: separá lo que estás leyendo, lo que amás y lo que querés volver a ver. Usá etiquetas, estantes y filtros para que todo esté donde tiene que estar.<br><em>Porque el orden también puede ser creativo.</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+    <!-- Vista previa del contenido -->
+    <section class="preview">
+        <h2 style="margin-bottom: 0px;">Descubrí qué inspira a otras personas</h2>
+        <p style="margin-bottom: 15px; font-size: large;color: #FAF7F2;">Explorá estantes públicos, encontrá joyitas y empezá tu propia colección.</p>
+        <div class="shelf-grid" style="margin-bottom: 30px;">
+        <div class="shelf">Nombre_Estante
+            <div class="shelf-card"><img src="static/book_cover_Conejo.webp" class="book-cover"/></div>
+            <p><i>Descripcion_estante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus nibh. Aliquam ultrices purus libero, at lobortis tortor sodales at. Phasellus id neque sit amet sapien congue volutpat.</i></p>
+            <a href="estantedelusuario" style="text-decoration: none; font-size: 0.8rem;"><ion-icon name="people-outline"></ion-icon>Nombre_usuario</a>
+        </div>
+        <div class="shelf">Nombre_Estante
+            <div class="shelf-card"><img src="static/book_cover_HP.jpg" class="book-cover"/></div>
+            <p><i>Descripcion_estante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus nibh. Aliquam ultrices purus libero, at lobortis tortor sodales at. Phasellus id neque sit amet sapien congue volutpat.</i></p>
+            <a href="estantedelusuario" style="text-decoration: none; font-size: 0.8rem;"><ion-icon name="people-outline"></ion-icon>Nombre_usuario</a>
+        </div>
+        <div class="shelf">Nombre_Estante
+            <div class="shelf-card"><img src="static/book_cover_Principitpjpg.jpeg" class="book-cover"/></div>
+            <p><i>Descripcion_estante Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus nibh. Aliquam ultrices purus libero, at lobortis tortor sodales at. Phasellus id neque sit amet sapien congue volutpat.</i></p>
+            <a href="estantedelusuario" style="text-decoration: none; font-size: 0.8rem;"><ion-icon name="people-outline"></ion-icon>Nombre_usuario</a>
+        </div>
+        </div>
+    </section>
+    <!--Seccion top 5 libros recomendados-->
+    <section class="top-5-books">
+        <div class="grid-container">
+              <div class="columna-izquierda">
+                <h2 style="margin-bottom: 0px;">TOP5</h2> 
+                <p style="margin-bottom: 15px; font-size: large;">Los libros más guardados y mejor calificados por nuestros usuarios.<br>Perfectos para tu próxima lectura.</p>
+                <div class="container-top5">
+                    <img src="static/book_cover_Correromorir.webp"/>
+                    <img src="static/book_cover_shadowhunter.jpeg"/>
+                    <img src="static/book_cover_viajelacentrodelatierra.webp"/>
+                    <img src="static/book_cover_5personas.jpeg"/>
+                    <img src="static/book_cover_vueltaalmundo.webp"/>
+                </div>
+             </div>
+        <div class="columna-derecha">
+            <h2 style="margin-bottom: 0px;">Porque leer no solo te entretiene:<br>te transforma</h2> 
+            <p style="margin-bottom: 15px; text-align: justify;">
+                Metas de lectura, logros personales y badges coleccionables.<br>
+                En Estantify no solo guardás contenido también crecés.
+                Seteá objetivos como <i>“leer 5 libros este mes”</i> o <i>“terminar esa saga pendiente”</i>, y desbloqueá insignias únicas a medida que avanzás.
+                <br>Leer mejora tu concentración, reduce el estrés, amplía tu vocabulario y te conecta con nuevas ideas y emociones.
+                <br>Cada página suma. Y en Estantify, cada meta cumplida también se celebra.<br>
+                <strong>Algunos badges que podés conseguir:<br></strong>
+                    ❤️ Primer guardado – tu primer favorito.<br>
+                    🔥 Racha lectora – 7 días seguidos leyendo.<br>
+                    📚 Estante completo – organizaste 10 ítems.<br>
+                    🔎 Explorador/a – descubriste 3 nuevos géneros.<br>
+                    🪶  Reviewer – dejaste 10 reseñas.<br>
+            </p>
+        </div>
+        </div>
+    </section>
+    <!--empty space-->
+    <section class="empty-space">
+        <!--MORE CODE-->
+        <div class="cta-grid">
+            <div class="cta-texto">
+                <h2>¿Listx para empezar tu viaje?</h2>
+                <p>Guardá lo que amás, organizalo con estilo y descubrí joyitas nuevas cada día. Unite a la comunidad de Estantify.</p>
+            </div>
+            <div class="cta-boton">
+                <a href="/register.html" class="cta-button">Creá tu cuenta gratis</a>
+            </div>
+        </div>
+    </section>
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+            <div class="logo" style="margin-right: 10px;"><img src="static/icons8-explicit-50.png" height="55px"></div>
+            <h4>Estantify</h4>
+            <p>Hecho con 💛 para lectorxs curiosxs.<br>
+            Illustration by <a href="https://icons8.com/illustrations/author/206397">Pablo Marquez Ouch!</a>
+            </p>
+            </div>
+            <div class="footer-links">
+            <h4>Enlaces</h4>
+            <nav>
+                <a href="/about-us.html">Sobre nosotros</a>
+                <a href="/contact.html">Contacto</a>
+                <a href="#">Privacidad</a>
+            </nav>
+            </div>
+            <div class="footer-social">
+            <h4>Redes sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="/static/icons8-instagram-100.png" alt="Instagram" ></a>
+                    <a href="#"><img src="/static/icons8-tik-tok-48.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="footer-copy">
+            <p>&copy; 2025 Estantify. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

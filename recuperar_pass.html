@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/33d6bbfd7171189bd02d36b4e2befb6b-pila-de-libros-te-ilustracion.webp">
+    <link rel="shortcut icon" href="/static/icons8-explicit-50.png">
+    <title>Recuperar contraseña | Estantify</title>
+   <!--CSS Styles--> 
+    <link rel="stylesheet" href="css/recuperar_pass.css">
+    <!--Google Fonts--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Form section-->
+    <section>
+        <div class="form-box" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="grid">
+                <div class="grid-left">
+                    <h2>Recuperar contraseña</h2>
+                    <h3>Ingrese tu correo electronico,<br> te enviaremos un link para restablecer tu contraseña.</h3>
+                    <div class="login">
+                        <p>Volver a la pagina de <a href="/login.html">Login.</a></p>
+                    </div>
+                </div>
+                <div class="grid-right">
+                    <div class="form-value">
+                        <form action="">
+                            <div class="inputbox">
+                                <ion-icon name="at-outline"></ion-icon>
+                                <input type="email" required placeholder=" ">
+                                <label for="email">Usuario o Correo electronico</label>
+                            </div>
+                            <button>Solicitar link de recuperacion</button> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--javascript section-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
